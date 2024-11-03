@@ -6,7 +6,7 @@
       "runner": "@nrwl/nx-cloud",
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e"],
-        "accessToken": "Njk1OGIzYjUtZDYxNC00MTE5LTlhYmYtMWQwZDZhZDMxMDkzfHJlYWQtd3JpdGU="
+        "accessToken": "NDI5MzQ3NjMtM2YwYS00OWMxLWFkNDMtNTRmM2YwNWVmNzhjfHJlYWQtd3JpdGU="
       }
     }
   },
@@ -18,9 +18,7 @@
     "test": {
       "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"]
     },
-    "lint": {
-      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
-    }
+    "lint": { "inputs": ["default", "{workspaceRoot}/.eslintrc.json"] }
   },
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
@@ -41,9 +39,7 @@
         "linter": "eslint",
         "babel": true
       },
-      "component": {
-        "style": "styled-components"
-      },
+      "component": { "style": "styled-components" },
       "library": {
         "style": "styled-components",
         "unitTestRunner": "jest",
